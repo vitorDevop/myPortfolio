@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitor Barroso - Portfolio</title>
+  <link rel="icon" type="image/png" href="/img/work.svg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/fullpage.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB3ONyJaTfJGTICD3NTExBIu3Ik_jtEpCs",
+      authDomain: "myportfolio-47fec.firebaseapp.com",
+      databaseURL: "https://myportfolio-47fec.firebaseio.com",
+      projectId: "myportfolio-47fec",
+      storageBucket: "myportfolio-47fec.appspot.com",
+      messagingSenderId: "925939877483",
+      appId: "1:925939877483:web:19b35d2d26dffcd899932e",
+      measurementId: "G-XW2DE6Y1Z0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="navbar-brand">Vítor Barroso</div>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav" id="menu">
+        <a href="#home" data-menuanchor="home" class="nav-item nav-link">Inicio</a>
+        <a href="#about" data-menuanchor="about" class="nav-item nav-link">Sobre</a>
+        <a href="#projects" data-menuanchor="projects" class="nav-item nav-link">Projetos</a>
+        <a href="#contact" data-menuanchor="contact" class="nav-item nav-link">Contactar</a>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="fullpage" data-spy="scroll" data-target=".navBar" data-offset="50">
+    <div class="section text-light" id="section0">
+      <h1 class="text-center display-4">Vítor Barroso Full-Stack developer</h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-1">
+            <a href="https://linkedin.com/in/vitor-barroso-b13b30175" target="_blank" class="text-white social">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="https://github.com/vitorDevop" target="_blank" class="text-white social">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="mailto:vitorbarrosodev@gmail.com?subject=oferta%20de%20emprego%20-%20main%20site" target="_blank"
+              class="text-white social">
+              <i class="fas fa-envelope fa-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="container">
+        <div class="row" style="margin-top: 60px;">
+          <div class="col-12 col-md-10">
+            <p>Olá sou o Vitor, tenho 20 anos, acabei terminar a licenciatura no Instituto Universitário da Maia -
+              ISMAI,
+              estou
+              à procura de trabalho.</p>
+            <p>Tenho mais experiência com:</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                    <ul style="list-style: none;">
+                      <li>NodeJS</li>
+                      <li>ReactJS</li>
+                      <li>ExpressJS</li>
+                      <li>MongoDB</li>
+                      <li>Sqlite</li>
+                      <li>Boostrap</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul style="list-style: none;">
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                      <li>SQLServer</li>
+                      <li>MySQL</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <p>Já trabalhei com:</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-6">
+                    <ul style="list-style: none;">
+                      <li>C#</li>
+                      <li>Dart</li>
+                      <li>Flutter</li>
+                      <li>Php</li>
+                      <li>Laravel</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul style="list-style: none;">
+                      <li>Jquery</li>
+                      <li>Ajax</li>
+                      <li>Xamarin</li>
+                      <li>.Net</li>
+                      <li>Java</li>
+                      <li>Kotlin</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <div class="slide" id="slide1">
+        <div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+          <div class="row">
+            <div class="col mb-4 mt-2">
+              <div class="text-center">
+                <h3>Tic Tac Toe - Plataforma Web</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+            </div>
+            <div class="col-5 align-self-center">
+              <div>
+                <a class="d-block" data-fancybox="TicTacToe"
+                  data-caption="<h6>Login</h6> efetuado utilizando o PassportJS com a base de dados MongoDB, com acesso através da conta google e facebook"
+                  href="/img/ticTacToe/login.png">
+                  <img class="img-fluid" src="/img/ticTacToe/login.png">
+                </a>
+                <a href="https://vitor.fun/" target="_blank" class="mt-2 lead">Ver demo online</a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Registo</h6> efetuado utilizando o PassportJS com a base de dados MongoDB, com registo através da conta google e facebook, podendo utilizar email, conta de Facebook e Google em simultaneo"
+                  href="/img/ticTacToe/register.png">
+                  <img class="img-fluid" src="/img/ticTacToe/register.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Repor palavra-passe</h6> envia um email com um token de reposição de palavra-passe, para posterior alteração"
+                  href="/img/ticTacToe/resetPassword.png">
+                  <img class="img-fluid" src="/img/ticTacToe/resetPassword.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Seleção de oponente</h6> permite selecionar o oponente de jogo"
+                  href="/img/ticTacToe/home.png">
+                  <img class="img-fluid" src="/img/ticTacToe/home.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Àrea de Jogo</h6> permite jogar na forma multiplayer e com a AI"
+                  href="/img/ticTacToe/play.png">
+                  <img class="img-fluid" src="/img/ticTacToe/play.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Perfil</h6> permite alterar o avatar e imagem de fundo de jogo"
+                  href="/img/ticTacToe/profile.png">
+                  <img class="img-fluid" src="/img/ticTacToe/profile.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Ranking</h6> ranking de score dos 5 utilizadores" href="/img/ticTacToe/ranking.png">
+                  <img class="img-fluid" src="/img/ticTacToe/ranking.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Admin - Dashboard</h6> permite verificar quantos utilizadores estão registados no total, quantos se tem registado ultimamente"
+                  href="/img/ticTacToe/dashboard.png">
+                  <img class="img-fluid" src="/img/ticTacToe/dashboard.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Admin - Lista de utilizadores</h6> permite ver quantos utilizadores estão registados, com conta verificada. Com a possibilidade de desativação de conta e eliminação. Com funcionalidades em tempo real (online/offline, salas de jogo, novo registo, desativar contas)"
+                  href="/img/ticTacToe/usersList.png">
+                  <img class="img-fluid" src="/img/ticTacToe/usersList.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Admin - Histórico de acessos</h6> permite verificar os ultimos acessos"
+                  href="/img/ticTacToe/accessHistory.png">
+                  <img class="img-fluid" src="/img/ticTacToe/accessHistory.png">
+                </a>
+                <a class="d-none" data-fancybox="TicTacToe"
+                  data-caption="<h6>Admin - Histórico de Partidas</h6> permite verificar um histórico de jogos efetuados"
+                  href="/img/ticTacToe/gamesHistory.png">
+                  <img class="img-fluid" src="/img/ticTacToe/gamesHistory.png">
+                </a>
+              </div>
+            </div>
+            <div class="col-5 align-self-center text-center">
+              <p>Este projeto consiste numa plataforma web de jogos multiplayer, neste caso o jogo do
+                galo. Os utilizadores podem jogar em diferentes salas.</p>
+              <p>Como tecnologias foram utilizadas <b>NodeJS</b>, <b>ExpressJS</b>, <b>MongoDB</b>, Handlebars
+                Template Engine,
+                Mongoose, PassportJS, NodeMailer.
+              </p>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide2">
+        <div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+          <div class="row">
+            <div class="col mb-4 mt-2">
+              <div class="text-center">
+                <h3>SaveService - App Móvel</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+            </div>
+            <div class="col-5">
+              <div>
+                <a class="d-block" data-fancybox="SaveService"
+                  data-caption="<h6>Onboarding</h6> fornece uma visão geral das funcionalidades da app"
+                  href="/img/saveService/Onboarding1.png">
+                  <img class="img-fluid" src="/img/saveService/Onboarding1.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Onboarding</h6> fornece uma visão geral das funcionalidades da app"
+                  href="/img/saveService/Onboarding2.png">
+                  <img class="img-fluid" src="/img/saveService/Onboarding2.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Onboarding</h6> fornece uma visão geral das funcionalidades da app"
+                  href="/img/saveService/Onboarding3.png">
+                  <img class="img-fluid" src="/img/saveService/Onboarding3.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Quick Actions</h6> permite de forma rápida criar um serviço, aceder à lista e ver serviços num mapa"
+                  href="/img/saveService/QuickActions.png">
+                  <img class="img-fluid" src="/img/saveService/QuickActions.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Página incial</h6> permite selecionar 3 opções sendo elas, login, registo e reposição de palavra-passe"
+                  href="/img/saveService/homePage.png">
+                  <img class="img-fluid" src="/img/saveService/homePage.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Login</h6> login efetuado com email e palavra-passe no Firebase auth"
+                  href="/img/saveService/Login.png">
+                  <img class="img-fluid" src="/img/saveService/Login.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Registo</h6> registo efetuado no Firebase Auth"
+                  href="/img/saveService/Register.png">
+                  <img class="img-fluid" src="/img/saveService/Register.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Reposição de palavra-passe</h6> efetuada com recurso ao Firebase Auth."
+                  href="/img/saveService/ResetPassword.png">
+                  <img class="img-fluid" src="/img/saveService/ResetPassword.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService" data-caption="<h6>Drawer</h6>"
+                  href="/img/saveService/drawer.png">
+                  <img class="img-fluid" src="/img/saveService/drawer.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Criar serviço</h6> permite a criação de um serviço inserindo a descrição, o local com recurso ao Google Places Api, a data, hora, email, e número de telefone, podendo escolher um dos seus contactos e também adicionar uma foto"
+                  href="/img/saveService/createService.png">
+                  <img class="img-fluid" src="/img/saveService/createService.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Inserir localização</h6> permite adicionar localização com recurso ao Google Places"
+                  href="/img/saveService/insertLocation.png">
+                  <img class="img-fluid" src="/img/saveService/insertLocation.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Efeito Shimming</h6> para uma melhor experiência de utilização recorri ao shimming para o utilizador ficar entretido enquanto espera pelo conteudo"
+                  href="/img/saveService/serviceListShimming.png">
+                  <img class="img-fluid" src="/img/saveService/serviceListShimming.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Lista de serviços</h6> apresenta a lista de serviços, clicando num deles, apresenta os detalhes"
+                  href="/img/saveService/serviceList.png">
+                  <img class="img-fluid" src="/img/saveService/serviceList.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Detalhes de serviço</h6> visualização dos detalhes do serviço incluindo campos opcionais como número de telefone, email e foto. Podendo mesmo enviar um email, ligar e ver o local com maior detalhe através do butão. Ao partilhar pode enviar todo a descrição do serviços pelas suas apps favoritas de forma direta"
+                  href="/img/saveService/serviceDetails.png">
+                  <img class="img-fluid" src="/img/saveService/serviceDetails.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Detalhes de serviço</h6> apresenta todos os detalhes do serviço"
+                  href="/img/saveService/ServiceDetailsImage.png">
+                  <img class="img-fluid" src="/img/saveService/ServiceDetailsImage.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Eliminar serviço</h6> apresenta uma alerta para verificar se o utilizador deseja mesmo eliminar o serviço"
+                  href="/img/saveService/deleteService.png">
+                  <img class="img-fluid" src="/img/saveService/deleteService.png">
+                </a>
+                <a class="d-none" data-fancybox="SaveService"
+                  data-caption="<h6>Mapa de serviços</h6> apresenta todos os serviços condensados num único mapa"
+                  href="/img/saveService/mapServices.png">
+                  <img class="img-fluid" src="/img/saveService/mapServices.png">
+                </a>
+              </div>
+            </div>
+            <div class="col-5 align-self-center text-center">
+              <p>Este projeto consiste na conceção de uma aplicação com a componente da localização, sendo que permite
+                gerir serviços.
+              </p>
+              <p>Tecnologias que foram utilizadas <b>Dart</b>, <b>Flutter</b>, Firebase(auth, firestore e storage)
+                Google Places API e Google Maps.</p>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+          <div class="row">
+            <div class="col mb-4 mt-2">
+              <div class="text-center">
+                <h3>MyBank - App Móvel</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+            </div>
+            <div class="col-5">
+              <div>
+                <a class="d-block" data-fancybox="MyBank"
+                  data-caption="<h6>Login</h6> efetuado utilizando o Firebase Auth" href="/img/myBank/login.png">
+                  <img class="img-fluid" src="/img/myBank/login.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Registo</h6> efetuado utilizando o Firebase Auth" href="/img/myBank/register.png">
+                  <img class="img-fluid" src="/img/myBank/register.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Repor palavra-passe</h6> efetuado utilizando o Firebase Auth"
+                  href="/img/myBank/resetPassword.png">
+                  <img class="img-fluid" src="/img/myBank/resetPassword.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>SplashScreen</h6> Mostrada sempre que entra na app"
+                  href="/img/myBank/splashScreen.png">
+                  <img class="img-fluid" src="/img/myBank/splashScreen.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Autenticação com impressão digital</h6> utilização do package local_auth"
+                  href="/img/myBank/fingerprintAuth.png">
+                  <img class="img-fluid" src="/img/myBank/fingerprintAuth.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Inserção de conta</h6> Inserção de conta efetuando pedidos à Api da Sibs e salvando os dados no Firestore"
+                  href="/img/myBank/insertAccount.png">
+                  <img class="img-fluid" src="/img/myBank/insertAccount.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Efetuar pagamentos</h6> Pagamentos efetuados com recurso à Api da Sibs"
+                  href="/img/myBank/makePayment.png">
+                  <img class="img-fluid" src="/img/myBank/makePayment.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Lista de contas</h6> Consumo das contas já previamente inseridas guardadas no Firestore"
+                  href="/img/myBank/bankList.png">
+                  <img class="img-fluid" src="/img/myBank/bankList.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Detalhes de conta</h6> Consumo dos dados do Firestore, para extração da identificação da conta, para posterior consulta na Api da Sibs"
+                  href="/img/myBank/accountDetails.png">
+                  <img class="img-fluid" src="/img/myBank/accountDetails.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Detalhes de conta - transações</h6> consulta das transações efetuando pedido à Api da Sibs"
+                  href="/img/myBank/accountDetails2.png">
+                  <img class="img-fluid" src="/img/myBank/accountDetails2.png">
+                </a>
+                <a class="d-none" data-fancybox="MyBank"
+                  data-caption="<h6>Eliminar conta</h6> remoção dos dados da conta associados ao utilizador no Firestore"
+                  href="/img/myBank/deleteAccount.png">
+                  <img class="img-fluid" src="/img/myBank/deleteAccount.png">
+                </a>
+              </div>
+            </div>
+            <div class="col-5 align-self-center text-center">
+              <p>Este projeto consiste numa simulação de uma aplicação de um banco, tomando partido da norma PSD2.</p>
+              <p>Como tecnologias foram utilizadas <b>Dart</b> e <b>Flutter</b>, <b>Firebase (auth e firestore)</b>,
+                consumindo a <a href="https://www.sibsapimarket.com/" target="_blank">SIBS API Market</a> em ambiente
+                sandbox.</p>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide4">
+        <div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+          <div class="row">
+            <div class="col mb-4 mt-2">
+              <div class="text-center">
+                <h3>SideTicket - Plataforma Web (gestão de tickets)</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-1">
+            </div>
+            <div class="col-5">
+              <div>
+                <a class="d-block" data-fancybox="SideTicket"
+                  data-caption="<h6>Lista de tickets</h6> lista de tickets com sua prioridade, estado, titulo, descrição e data estimada de resolução"
+                  href="/img/sideTicket/ticketList.png">
+                  <img class="img-fluid" src="/img/sideTicket/ticketList.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Filtros da lista de tickets</h6> permite filtrar os tickets por estado e prioridade, podendo também ordenar por data e prioridade"
+                  href="/img/sideTicket/ticketListFilter.png">
+                  <img class="img-fluid" src="/img/sideTicket/ticketListFilter.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Filtros da lista de tickets</h6> podendo aplicar multiplos filtros"
+                  href="/img/sideTicket/ticketListMultipleFilters.png">
+                  <img class="img-fluid" src="/img/sideTicket/ticketListMultipleFilters.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Pesquisa de tickets</h6> permite pesquisa de tickets por titulo, descrição ou data."
+                  href="/img/sideTicket/ticketsSearch.png">
+                  <img class="img-fluid" src="/img/sideTicket/ticketsSearch.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Criar Ticket</h6> permite a criação de um ticket com titulo, descrição, prioridade, estado, localização, data e imagens"
+                  href="/img/sideTicket/createTicket.png">
+                  <img class="img-fluid" src="/img/sideTicket/createTicket.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Adicionar imagem</h6> permite anexo de várias imagens a cada ticket"
+                  href="/img/sideTicket/uploadImage.png">
+                  <img class="img-fluid" src="/img/sideTicket/uploadImage.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Editar Ticket</h6> permite edição de tickets" href="/img/sideTicket/editTicket.png">
+                  <img class="img-fluid" src="/img/sideTicket/editTicket.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Adicionar comentário ao ticket</h6> permite criar um comentário anexado ao ticket"
+                  href="/img/sideTicket/addComment.png">
+                  <img class="img-fluid" src="/img/sideTicket/addComment.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Notificar utilizadores</h6> Notificações especificas para cada utilizador"
+                  href="/img/sideTicket/notificationsSystem.png">
+                  <img class="img-fluid" src="/img/sideTicket/notificationsSystem.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Admin - Notificação dos utilizadores</h6> permite mandar uma notificação para um determinado grupo de utilizadores"
+                  href="/img/sideTicket/adminUsersNotifications.png">
+                  <img class="img-fluid" src="/img/sideTicket/adminUsersNotifications.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Perfil</h6> visualização e edição dos dados do utilizador"
+                  href="/img/sideTicket/profile.png">
+                  <img class="img-fluid" src="/img/sideTicket/profile.png">
+                </a>
+                <a class="d-none" data-fancybox="SideTicket"
+                  data-caption="<h6>Repor palavra-passe</h6> permite reposição de palavra-passe com envio de email"
+                  href="/img/sideTicket/resetPassword.png">
+                  <img class="img-fluid" src="/img/sideTicket/resetPassword.png">
+                </a>
+              </div>
+            </div>
+            <div class="col-5 align-self-center text-center">
+              <p>Este projeto consiste na conceção de uma plataforma para gestão de tickets, podendo ser aplicados a
+                todo o tipo de contexto desde reparações à necessidade de serviços especificos.
+              </p>
+              <p>Tecnologias que foram utilizadas <b>php</b>, <b>Laravel</b>, <b>Sqlite</b>.</p>
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" id="section3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col text-center">
+            <h5>Para contactar <a
+                href="mailto:vitorbarrosodev@gmail.com?subject=oferta%20de%20emprego%20-%20main%20site">envie um
+                email</a>. <br>Responderei o mais rápido possivel.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section fp-auto-height" id="section3">
+      <div class="row ">
+        <div class="col">
+          <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">
+                Desenvolvido com <i class="fas fa-heart" style="color:red"></i> por Vítor Barroso Developer
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/fullpage.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      anchors: ['home', 'about', 'projects', 'contact', 'footer'],
+      menu: '#menu',
+      sectionsColor: ['#C63D0F', '#F2F2F2', '#E0E0E0'],
+      scrollBar: false,
+      licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+    });
+  </script>
+</body>
+
+</html>
